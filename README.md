@@ -1,0 +1,1 @@
+git@github.com:pkhmvmaria/posmotri-v-okno-fd.git

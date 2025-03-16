@@ -55,6 +55,7 @@ ol {
 
 .content {
   width: 1140px;
+  height: 534px;
   margin: 133px 30px;
   display: grid;
   grid-template-columns: auto auto;
@@ -66,13 +67,17 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-evenly;
-  align-items: end;
+  align-items: start;
   gap: 41px;
 }
+.result {
+  display: flex;
+  flex-direction: column;
+gap: 16px;}
 
 .content__list-container {
   position: relative;
-  max-height: 304px;
+  max-height: 298px;
   overflow-y: scroll;
   overflow-x: auto;
 }
@@ -80,22 +85,22 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding-top: 35px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 385px;
-  margin-bottom: 15px;
 }
+
+/* в макете стоит высота 386px. согласно макету, высота 298px у элемента content__list-container */
 
 .result__video {
   width: 100%;
@@ -111,6 +116,7 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
+  max-height: 103px;
   object-fit: cover;
   object-position: center;
   justify-self: end;
@@ -118,7 +124,9 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .search-form__fieldset-title {
@@ -134,7 +142,7 @@ ol {
   font-size: 75px;
   font-weight: bold;
   line-height: 94%;
-  padding-bottom: 15px;
+  padding-bottom: 26px;
 }
 
 .content__accent {
@@ -153,6 +161,7 @@ ol {
 
 .search-form__label {
   display: flex;
+  cursor: pointer;
 }
 
 .search-form__fieldset {
@@ -172,7 +181,7 @@ ol {
   appearance: none;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: underline;
   cursor: pointer;
 }
